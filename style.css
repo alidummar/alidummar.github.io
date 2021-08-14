@@ -9924,10 +9924,10 @@ h6 a:hover {
 
 .booking-fig h2:after {
     position: absolute;
-    background: url("images/logo.png");
+    background: url("images/DESTINY.png");
     content: '';
     width: 140px;
-    top: -119px;
+    top: -110px;
     left: 25%;
     height: auto;
     -webkit-transform: scale(0.5);
@@ -10104,7 +10104,7 @@ h6 a:hover {
 
 .latestResult {
     padding: 200px 0;
-    background: url("images/Group\ Techies.jpg") no-repeat;
+    background: url("images/gallery/img1.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }

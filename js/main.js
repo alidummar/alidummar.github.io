@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * requestAnimationFrame Shim 
+ * requestAnimationFrame 
  */
 window.requestAnimFrame = (function()
 {
@@ -53,7 +53,7 @@ $(document).ready(function () {
       scrolling.init(scrollOptions);
     }
 
-    /*---------- navbar menu-----------*/
+    /*---------- navbar menu---------*/
 
     $('.navbar-toggle').on('click', function () {
         $(this).toggleClass('is-active');

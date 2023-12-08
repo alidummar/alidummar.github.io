@@ -954,40 +954,9 @@ $(document).ready(function () {
         removeProduct(id, $(this));
     });
 
-    /*--------------- Google Maps -- Contact Page  ------------------*/
+    
 
-    var map;
 
-    function initMap() {
-      // Create a map object and specify the DOM element for display.
-      var _location = new google.maps.LatLng(37.4538889, -122.1811111);
-      map = new google.maps.Map(document.getElementById('map-section'), {
-        scrollwheel: false,
-        panControl: false,
-        zoomControl: false,
-        disableDefaultUI: true,
-        styles: [
-              {'stylers': [{ 'hue': '#dd0d0d' }, { saturation: -100 }]},
-              {
-                'featureType': 'road.arterial',
-                'elementType': 'labels',
-                'stylers': [{'visibility': 'off'}]
-              },
-              {
-                'featureType': 'poi.business',
-                'elementType': 'geometry',
-                'stylers': [{'lightness': 100},
-                      {'visibility': 'simplified'}]
-              }
-        ],
-        zoom: 12,
-        center: _location
-      });
-    }
-
-    if($('#map-section'). length){
-      google.maps.event.addDomListener(window, 'load', initMap);
-    }
 
     /*--------------- Today's Date ------------------*/
 

@@ -14182,27 +14182,18 @@ ul.slick-dots li button:hover {
     padding: 300px 0 0 0;
     width: 100%;
     position: relative;
-    background: #E8DEEA;
+    background: #B31312;
 }
 
-.map_wrapper h2 {
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
 .contact_form {
     position: relative;
     padding: 100px 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: lightgray;
 }
 
-#map-section {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
+
 
 .formcontact {
     padding: 30px 90px;

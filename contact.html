@@ -121,22 +121,39 @@
                     <div class=contact_form>
                         <h2 class=heading>contact us <span>by form</span></h2>
 
-                        <p class=headParagraph>Get in touch today and register .</p>
+                        <p class=headParagraph>Get in touch today and register.</p>
 
-                        <form data-parsley-validate="" name=contact class="formcontact clearfix">
-                            <div class=form-group><input type=text class=form-control name=name placeholder=Name required="" data-parsley-required-message="please insert Name"></div>
-                            <div class=form-group><input type=text class=form-control name=phone placeholder=Phone required="" data-parsley-required-message="please insert Phone No">
-                            </div>
-                            <div class=form-group><input type=text class=form-control name=subject placeholder=subject required="" data-parsley-required-message="please insert subject">
-                            </div>
-                            <div class=form-group><input type=email class=form-control name=email placeholder=Email required="" data-parsley-required-message="please insert Email">
-                            </div>
-                            <div class=form-group1><textarea class="form-control textas" name=comment placeholder=Message required="" data-parsley-minlength=20 data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.." data-parsley-validation-threshold=10
-                                    data-parsley-maxlength=100></textarea></div>
-                            <button type=submit class="btn btn-red" id=send>Send A Email</button>
-                            <div class=form-message></div>
+                        <form data-parsley-validate="" name="contact" class="formcontact clearfix">
+                            <div class="form-group"><input type="text" class="form-control" name="name" placeholder="Name" required="" data-parsley-required-message="please insert Name"></div>
+                            <div class="form-group"><input type="text" class="form-control" name="phone" placeholder="Phone" required="" data-parsley-required-message="please insert Phone No"></div>
+                            <div class="form-group"><input type="text" class="form-control" name="subject" placeholder="Subject" required="" data-parsley-required-message="please insert subject"></div>
+                            <div class="form-group"><input type="email" class="form-control" name="email" placeholder="Email" required="" data-parsley-required-message="please insert Email"></div>
+                            <div class="form-group1"><textarea class="form-control textas" name="comment" placeholder="Message" required="" data-parsley-minlength="20" data-parsley-minlength-message="You need to enter at least a 20 character comment.." data-parsley-validation-threshold="10"
+                                    data-parsley-maxlength="100"></textarea></div>
+                            <button type="button" class="btn btn-red" id="sendEmailButton">Send The Email</button>
+                            <div class="form-message"></div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modified script for simulating email sending -->
+        <script>
+        document.getElementById('sendEmailButton').addEventListener('click', function() {
+            // Simulate email sending
+            simulateEmailSending();
+        });
+        
+        function simulateEmailSending() {
+            // Simulate a successful email sending
+            // You can add your logic here to handle the success message
+            document.querySelector('.form-message').innerHTML = 'Success! You sent the message from the form.'
+            formMessage.style.color = 'white'; 
+            
+        }
+        </script>
+        
                 </div>
             </div>
         </section>
